@@ -60,18 +60,21 @@ PostgreSQL
 
 ### 1. Clonar repositorio
 ```bash
-git clone https://github.com/JosueAmbrosio/b89-backend
+git clone https://github.com/JosueAmbrosio/b89-backend-challenge
 cd backend-b89
 ```
 ### 2. Configurar variables de entorno
 Crea un archivo `.env` basado en `.env.example` y completa los valores:
 ```
 env
+POSTGRES_DB=b89
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=password
 DATABASE_URL=postgresql://postgres:password@db:5432/b89
 JWT_SECRET=mi_access_super_secreto
 JWT_REFRESH_SECRET=mi_refresh_super_secreto
 SMTP_USER=correo
-SMTP_PASS=clave de 4 digitos
+SMTP_PASS=xxxx xxxx xxxx
 FRONTEND_URL=http://localhost:3000
 ```
 ### 3. Iniciar servicios con Docker Compose
@@ -127,7 +130,7 @@ DATABASE_URL=postgresql://postgres:password@db:5432/b89
 JWT_SECRET=mi_access_super_secreto
 JWT_REFRESH_SECRET=mi_refresh_super_secreto
 SMTP_USER=correo
-SMTP_PASS=clave de 4 digitos
+SMTP_PASS=xxxx xxxx xxxx
 FRONTEND_URL=http://localhost:3000
 ```
 
